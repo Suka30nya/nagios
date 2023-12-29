@@ -1,0 +1,62 @@
+  1  setenforce 0
+    2  getenforce 
+    3  setstat
+    4  clear
+    5  vi /etc/selinux/config 
+    6  yum install epel-release
+    7  systemctl status firewalld
+    8  systemctl stop firewalld
+    9  systemctl status firewalld
+   10  systemctl disable firewalld
+   11  systemctl status firewalld
+   12  yum install nagios
+   13  yum install epel-release
+   14  yum install httpd
+   15  systemctl start httpd
+   16  cat /etc/passwd
+   17  id nagios
+   18  ls
+   19  find nagios.cfg
+   20  find./ nagios.cfg
+   21  find ./ nagios.cfg
+   22  ls /etc/nagios
+   23  vi /etc/nagios/nagios.cfg
+   24  yum install http://build.openhpc.community/OpenHPC:/1.3/CentOS_7/x86_64/ohpc-release-1.3-1.el7.x86_64.rpm
+   25  yum remove nagios
+   26  ll /etc/nagios/
+   27  yum repolist
+   28  yum install ohpc:nagios
+   29  yum install ohpc-nagios
+   30  yum remove nagios*
+   31  yum install ohpc-nagios
+   32  systemctl enable nrpe
+   33  vi /etc/nagios/nrpe
+   34  vi etc/nagios/nrpe
+   35  cd /etc
+   36  ls
+   37  cd nagios
+   38  ls
+   39  vi nrpe.cfg
+   40  id nrpe
+   41  id nagios
+   42  cd
+   43  yum install tree
+   44  hostname
+   45  tree etc/nagios
+   46  tree /etc/nagios
+   47  cat /etc/nagios/conf.d/commands.cfg 
+   48  cat /etc/nagios/conf.d/hosts.cfg.example 
+   49  cat /etc/nagios/conf.d/services.cfg.example 
+   50  ls usr/lib64/nagios/plugins/
+   51  cd usr
+   52  ls /usr/lib64/nagios/plugins
+   53   vi /etc/nagios/nagios.cfg
+   54   vi /etc/nagios/nrpe.cfg
+   55   vi /etc/nagios/objects/commands.cfg 
+   56   vi /etc/nagios/objects/contacts.cfg 
+   57   vi /etc/nagios/objects/localhost.cfg 
+   58  ls  /etc/nagios/objects/
+   59  ls  /etc/nagios
+   60   htpasswd -bc /etc/nagios/passwd nagiosadmin nagiosadmin
+   61  vi  /etc/nagios/passwd 
+   62  history
